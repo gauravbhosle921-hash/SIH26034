@@ -1,0 +1,25 @@
+{
+  "title": "Legal Metrology (Packaged Commodities) Rules, 2011 — prototype compliance matrix",
+  "source_priority": [
+    "G.S.R. 202(E), 7 March 2011",
+    "2026 amendments supplied with this project"
+  ],
+  "effective_updates": {
+    "2026-02-13": "E-commerce entities selling imported products must provide searchable and sortable country-of-origin filtering from 1 July 2026.",
+    "2026-04-27": "The substituted Rule 6(10A) country-of-origin filter requirement is stated to come into force from 1 July 2027.",
+    "2026-05-29": "Third Amendment Rules, 2026 effective on publication; permits mandatory declarations at bonded warehouses of AEO Tier-2/Tier-3 operators, provided retail packages have all mandatory declarations before leaving those warehouses; adds director-name detail and annual online detail update requirements to Rule 27."
+  },
+  "screening_fields": [
+    {"id":"manufacturer","label":"Manufacturer / packer / importer identity & address","mandatory_screen":"yes","conditional":"role-dependent"},
+    {"id":"product_name","label":"Name/identity of commodity","mandatory_screen":"yes"},
+    {"id":"net_quantity","label":"Net quantity","mandatory_screen":"yes"},
+    {"id":"mrp","label":"Maximum retail price / retail sale price","mandatory_screen":"yes"},
+    {"id":"date","label":"Manufacture / packing date","mandatory_screen":"yes","conditional":"commodity/format dependent"},
+    {"id":"best_before","label":"Best-before / use-by / expiry where applicable","mandatory_screen":"conditional"},
+    {"id":"consumer_care","label":"Consumer-care contact details","mandatory_screen":"yes"},
+    {"id":"unit_sale_price","label":"Unit sale price where applicable","mandatory_screen":"conditional"},
+    {"id":"font_size","label":"Numeral/letter height and readability","mandatory_screen":"image_geometry"},
+    {"id":"principal_display","label":"Principal display panel / placement","mandatory_screen":"image_geometry"},
+    {"id":"country_of_origin","label":"Country of origin for imported products/e-commerce listing","mandatory_screen":"conditional"}
+  ]
+}
